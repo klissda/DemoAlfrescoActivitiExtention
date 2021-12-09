@@ -45,7 +45,6 @@
     </properties>
 
 
-
     <dependencies>
 
         <!-- The main Activiti Enterprise application dependency that brings in all
@@ -93,9 +92,7 @@
 
 
     <build>
-
         <resources>
-
             <!-- Filter the resource files in this project and
 
   do property substitutions -->

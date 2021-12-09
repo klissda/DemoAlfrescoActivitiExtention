@@ -14,7 +14,6 @@ public class EmployeeClass implements JavaDelegate {
 
     public void execute(DelegateExecution execution) throws Exception {
         this.logger.info("[Process=" + execution.getProcessInstanceId() + "][Spring Java Delegate=" + this + "]");
-
         try {
             execution.setVariable("apiSuccess", false);
             String docNo = (String) execution.getVariable("docNo");

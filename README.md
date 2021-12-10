@@ -6,6 +6,9 @@ mvn clean install
 
 copy file build .jar to /opt/activiti15/tomcat/webapps/activiti-app/WEB-INF/lib
 
+ปัญหา ไม่สามารถรัน javascript && groovy ใน script task
+In: tomcat/webapps/activiti-app/WEB-INF/classes/activiti/whitelisted-scripts.conf remove the comment character where you need.
+
 ======================
 
 

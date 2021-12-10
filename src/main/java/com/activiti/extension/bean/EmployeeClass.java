@@ -20,8 +20,8 @@ public class EmployeeClass implements JavaDelegate {
             this.logger.info("[docNo] value : " + docNo);
             execution.setVariable("apiSuccess", true);
 
-        } catch (Exception var3) {
-            this.logger.error("[getEmployeeData] failed", var3);
+        } catch (Exception ex) {
+            this.logger.error("[getEmployeeData] failed", ex);
         }
     }
 }

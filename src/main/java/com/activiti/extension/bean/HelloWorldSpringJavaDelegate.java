@@ -15,4 +15,5 @@ public class HelloWorldSpringJavaDelegate implements JavaDelegate {
         logger.info("[Process=" + execution.getProcessInstanceId() +
                 "][Spring Java Delegate=" + this + "]");
     }
+
 }

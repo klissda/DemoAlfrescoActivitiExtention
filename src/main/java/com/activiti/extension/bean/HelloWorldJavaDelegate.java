@@ -17,6 +17,7 @@ public class HelloWorldJavaDelegate implements JavaDelegate {
         logger.info("[ActivityName=" + execution.getCurrentActivityName() +
                 "][ActivityId=" + execution.getCurrentActivityId() + "]");
 
+
         String initiator = (String) execution.getVariable("initiator");
         logger.info("Initiator of the process has user ID = " + initiator);
 

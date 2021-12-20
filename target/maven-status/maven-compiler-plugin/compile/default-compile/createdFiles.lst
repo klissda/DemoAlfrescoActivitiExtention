@@ -1,0 +1,8 @@
+com/activiti/extension/bean/EmployeeData.class
+com/activiti/extension/api/HelloWorldRestController.class
+com/activiti/extension/bean/HelloWorldJavaDelegate.class
+com/activiti/extension/bean/service/HelloWorldService.class
+SaleData.class
+com/activiti/extension/rest/GreetingMessage.class
+com/activiti/extension/bean/HelloWorldSpringJavaDelegate.class
+com/activiti/extension/bean/HelloWorldSpringTaskListener.class

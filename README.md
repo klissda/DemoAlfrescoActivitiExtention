@@ -8,7 +8,7 @@ copy file build .jar to /opt/activiti15/tomcat/webapps/activiti-app/WEB-INF/lib
 
 ปัญหา ไม่สามารถรัน javascript && groovy ใน script task
 In: tomcat/webapps/activiti-app/WEB-INF/classes/activiti/whitelisted-scripts.conf remove the comment character where you need.
-![image](https://user-images.githubusercontent.com/88300114/145548657-e9d457e0-f677-4491-8e02-1428afc81e9f.png)
+
 
 
 ======================

@@ -6,10 +6,12 @@ import java.io.Serializable;
 
 @XmlRootElement(name = "greeting")
 public class GreetingMessage implements Serializable {
+
     String name;
     String text;
 
-    public GreetingMessage() {}
+    public GreetingMessage() {
+    }
 
     public GreetingMessage(String name, String text) {
         this.name = name;
@@ -20,9 +22,9 @@ public class GreetingMessage implements Serializable {
     public String getName() {
         return name;
     }
-
     @XmlElement(name = "text")
     public String getText() {
         return text;
     }
+
 }

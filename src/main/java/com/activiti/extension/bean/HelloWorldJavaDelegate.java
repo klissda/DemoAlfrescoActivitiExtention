@@ -12,6 +12,7 @@ public class HelloWorldJavaDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution execution) throws Exception {
+
         logger.info("[Process=" + execution.getProcessInstanceId() +
                 "][Java Delegate=" + this + "]");
         logger.info("[ActivityName=" + execution.getCurrentActivityName() +
@@ -27,6 +28,7 @@ public class HelloWorldJavaDelegate implements JavaDelegate {
         for (Map.Entry<String, Object> procVar : procVars.entrySet()) {
             logger.info(" [" + procVar.getKey() + " = " + procVar.getValue() + "]");
         }
+
     }
 
 

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class EmployeeData implements JavaDelegate {
     private final Logger logger = LoggerFactory.getLogger(EmployeeData.class);
 
-    public void execute(DelegateExecution execution) throws Exception {
+    public void execute(DelegateExecution execution) {
 
         this.logger.info("[Process=" + execution.getProcessInstanceId() + "][Spring Java Delegate=" + this + "]");
 
@@ -20,6 +20,7 @@ public class EmployeeData implements JavaDelegate {
             String docNo = (String) execution.getVariable("docNo");
             this.logger.info("[docNo] value : " + docNo);
             execution.setVariable("apiSuccess", true);
+
 
         } catch (Exception ex) {
             this.logger.error("[getEmployeeData] failed", ex);

@@ -11,7 +11,7 @@ public class HelloWorldSpringJavaDelegate implements JavaDelegate {
     private static Logger logger = LoggerFactory.getLogger(HelloWorldSpringJavaDelegate.class);
 
     @Override
-    public void execute(DelegateExecution execution) throws Exception {
+    public void execute(DelegateExecution execution) {
         logger.info("[Process=" + execution.getProcessInstanceId() +
                 "][Spring Java Delegate=" + this + "]");
     }

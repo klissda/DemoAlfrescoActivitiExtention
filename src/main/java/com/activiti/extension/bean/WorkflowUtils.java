@@ -22,17 +22,18 @@ public class WorkflowUtils {
      */
 
     public String getThaiBahtTxt(String txt) {
+
         log.info("get thai baht >> " + txt);
         String bahtTH = "";
+
         try {
             bahtTH = BahtText.getBahtTextByString(txt.replace(",", ""));
         } catch (Exception e) {
             log.error("can't get thai baht from number");
         }
+
         return bahtTH;
     }
-
-
 
 //    /**
 //     *
